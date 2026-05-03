@@ -14,6 +14,7 @@ I'm from Manchester and interested in JVM internals. I'm an OpenJDK contributor 
 
 **2026**
 - [Spoofing Secure Boot on Windows](https://aprl.pet/writing/spoofing-secure-boot)
+- [Reversing mcsrfairplay's Native Module](https://aprl.pet/writing/reversing-mcsrfairplay)
 
 **2025**
 - [Hijacking the VM's JIT](https://aprl.pet/writing/hijacking-the-vm-jit)

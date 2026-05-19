@@ -1,0 +1,145 @@
+{
+  "editor.fontFamily": "'Berkeley Mono', 'Cascadia Code', monospace",
+  "editor.fontSize": 13.5,
+  "editor.lineHeight": 1.6,
+  "editor.fontLigatures": true,
+  "editor.letterSpacing": 0.3,
+  "terminal.integrated.fontFamily": "'Berkeley Mono', monospace",
+  "terminal.integrated.fontSize": 13,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.scrollBeyondLastLine": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "gutter",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.stickyScroll.enabled": true,
+  "editor.overviewRulerBorder": false,
+  "editor.padding.top": 12,
+  "editor.padding.bottom": 12,
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.tree.indent": 14,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.sash.size": 2,
+  "window.commandCenter": true,
+  "window.titleBarStyle": "custom",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.lineHeight": 1.3,
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.suggest.preview": true,
+  "editor.inlineSuggest.enabled": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": true,
+  "workbench.colorTheme": "Tokyo Night",
+  "chat.mcp.gallery.enabled": true,
+  "clangd.arguments": [
+    "--background-index",
+    "--background-index-priority=normal",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--header-insertion=iwyu",
+    "--suggest-missing-includes",
+    "--pch-storage=memory",
+    "--malloc-trim",
+    "--log=error"
+  ],
+  "clangd.path": "C:\\Program Files\\LLVM\\bin\\clangd.exe",
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.check.extraArgs": [
+    "--",
+    "-W",
+    "clippy::all"
+  ],
+  "rust-analyzer.cargo.features": "all",
+  "rust-analyzer.cargo.buildScripts.enable": true,
+  "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.inlayHints.bindingModeHints.enable": true,
+  "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
+  "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "always",
+  "rust-analyzer.inlayHints.discriminantHints.enable": "always",
+  "rust-analyzer.inlayHints.expressionAdjustmentHints.enable": "reborrow",
+  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+  "rust-analyzer.lens.references.adt.enable": true,
+  "rust-analyzer.lens.references.enumVariant.enable": true,
+  "rust-analyzer.lens.references.trait.enable": true,
+  "rust-analyzer.semanticHighlighting.strings.enable": true,
+  "lldb.showDisassembly": "auto",
+  "lldb.displayFormat": "auto",
+  "lldb.dereferencePointers": true,
+  "lldb.consoleMode": "evaluate",
+  "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
+  "cmake.installPrefix": "${workspaceFolder}/install",
+  "cmake.parallelJobs": 0,
+  "cmake.pinnedCommands": [
+    "CMake: Build",
+    "CMake: Debug",
+    "CMake: Run Tests"
+  ],
+  "cmake.configureArgs": [
+    "-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+  ],
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.inlayHints.fontSize": 11,
+  "editor.inlayHints.padding": true,
+  "files.associations": {
+    "*.td": "tablegen",
+    "*.ll": "llvm",
+    "*.mir": "llvm",
+    "*.lds": "cpp",
+    "Makefile.*": "makefile",
+    "*.toml": "toml"
+  },
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/target/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  },
+  "search.exclude": {
+    "**/build/**": true,
+    "**/target/**": true,
+    "**/*.ll": true,
+    "**/*.bc": true
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "MSYS2 UCRT64": {
+      "path": "C:\\msys64\\usr\\bin\\bash.exe",
+      "args": [
+        "--login",
+        "-i"
+      ],
+      "env": {
+        "MSYSTEM": "UCRT64",
+        "CHERE_INVOKING": "1"
+      },
+      "icon": "terminal-bash"
+    },
+    "Developer PowerShell": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoExit",
+        "-Command",
+        "& 'C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Launch-VsDevShell.ps1' -Arch amd64"
+      ],
+      "icon": "tools"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Developer PowerShell",
+  "git.enableSmartCommit": true
+}

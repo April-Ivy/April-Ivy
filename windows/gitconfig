@@ -1,0 +1,59 @@
+[user]
+	name = April Ivy
+	email = ivyapril2005@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINVLzKXoBVMvVQmWws3zTcROULwauF7cj+hYzEG0RJZM
+
+[core]
+	autocrlf = input
+	editor = code --wait
+	whitespace = fix
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = C:\\Users\\apwil\\AppData\\Local\\Microsoft\\WindowsApps\\op-ssh-sign.exe
+	allowedSignersFile = C:\\Users\\apwil\\.ssh\\allowed_signers
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[init]
+	defaultBranch = main
+
+[fetch]
+	prune = true
+	prunetags = false
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[rebase]
+	autoStash = true
+	autoSquash = true
+
+[diff]
+	algorithm = histogram
+	colorMoved = default
+
+[merge]
+	conflictstyle = zdiff3
+
+[rerere]
+	enabled = true
+
+[alias]
+	st = status -sb
+	lg = log --oneline --graph --decorate --all
+	undo = reset --soft HEAD~1
+	wip = commit -am "wip"
+	unwip = reset HEAD~1

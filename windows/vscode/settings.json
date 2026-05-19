@@ -141,5 +141,18 @@
     }
   },
   "terminal.integrated.defaultProfile.windows": "Developer PowerShell",
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://aka.ms/terminal-profiles-schema": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://www.schemastore.org/": true
+  },
+  "explorer.confirmPasteNative": false,
+  "explorer.confirmDragAndDrop": false,
+  "zig.zls.enabled": "on"
 }
